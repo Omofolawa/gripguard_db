@@ -1,0 +1,80 @@
+Business Name: GRIPGUARD Tyres
+Database Name: gripguarddb
+
+Tables:
+1. Products
+   - ProductID (Primary Key)
+   - ProductName
+   - CategoryID (Foreign Key)
+   - Quantity
+   - Cost
+
+2. Categories
+   - CategoryID (Primary Key)
+   - Name
+   - Size
+   - Rating
+
+3. Customers
+   - CustomerID (Primary Key)
+   - FirstName
+   - LastName
+   - Phone
+   - Address
+
+4. Bookings
+   - BookingID (Primary Key)
+   - OrderID (Foreign Key)
+   - CustomerID (Foreign Key)
+   - BookingDate
+
+5. Orders
+   - OrderID (Primary Key)
+   - OrderDate
+   - TotalCost
+   - ProductID (Foreign Key)
+   - BookingID (Foreign Key)
+
+6. Employees
+   - EmployeeID (Primary Key)
+   - Name
+   - Role
+   - Pay
+   - Address
+   - Email
+   - Phone
+
+7. Suppliers
+   - SupplierID (Primary Key)
+   - SupplierName
+   - ContactPerson
+   - Phone
+   - Address
+
+8. Inventory
+   - InventoryID (Primary Key)
+   - ProductID (Foreign Key)
+   - Quantity
+   - Location
+
+9. Sales
+   - SaleID (Primary Key)
+   - OrderID (Foreign Key)
+   - CustomerID (Foreign Key)
+   - SaleDate
+   - TotalCost
+
+
+10. Warranty
+    - WarrantyID (Primary Key)
+    - ProductID (Foreign Key)
+    - WarrantyPeriod
+    - TermsConditions
+
+11. Reviews
+    - ReviewID (Primary Key)
+    - ProductID (Foreign Key)
+    - CustomerID (Foreign Key)
+    - Rating
+    - ReviewText
+
